@@ -11,6 +11,10 @@ class Organisation < ActiveRecord::Base
   # --- Permissions --- #
 
   def create_permitted?
+#     puts "create_permitted? #{acting_user.administrator?}"
+#    debugger
+#    this IS THE LINE TO ADD TO INVOKE DEBUGGER
+
     acting_user.administrator?
   end
 

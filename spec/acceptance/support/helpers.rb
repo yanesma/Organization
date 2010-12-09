@@ -70,3 +70,4 @@ Spec::Runner.configure do |config|
     ActiveRecord::Base.delete_everything!
   end
 
+end
