@@ -39,5 +39,5 @@ config.gem 'rspec', :lib=>false, :version => '1.3.1'
 config.gem 'rspec-rails', :lib=>false, :version => '1.3.3'
 config.gem 'steak'
 config.gem 'capybara'
-config.gem 'rack-cache'
+#config.gem 'rack-cache'
 

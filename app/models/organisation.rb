@@ -7,7 +7,6 @@ class Organisation < ActiveRecord::Base
     timestamps
   end
 
-
   # --- Permissions --- #
 
   def create_permitted?

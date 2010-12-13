@@ -10,18 +10,18 @@ require File.join(File.dirname(__FILE__), 'boot')
 Rails::Initializer.run do |config|
   config.gem 'hobo'
 
-unless "RAILS_ENV" == "production"
-    require 'rack/cache'
-    config.gem 'rack-cache'
-    config.middleware.use Rack::Cache,
-      :verbose => true,
-      :metastore   => 'file:/tmp/cache/rack/meta',
-      :entitystore => 'file:/tmp/cache/rack/body'
-    
-  end
+#unless "RAILS_ENV" == "production"
+#    require 'rack/cache'
+#    config.gem 'rack-cache'
+#    config.middleware.use Rack::Cache,
+#      :verbose => true,
+#      :metastore   => 'file:/tmp/cache/rack/meta',
+#      :entitystore => 'file:/tmp/cache/rack/body'
+#
+#  end
 
-#require 'memcached'
-#  config.cache_store = :mem_cache_store, Memcached::Rails.new
+require 'memcached'
+  config.cache_store = :mem_cache_store, Memcached::Rails.new
 
   # Settings in config/environments/* take precedence over those specified here.
   # Application configuration should go into files in config/initializers

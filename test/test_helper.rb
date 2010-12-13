@@ -4,7 +4,7 @@ require 'test_help'
 
 Webrat.configure do |config|
   config.mode = :rails
-  #http://gitrdoc.com/rdoc/brynary/webrat/273e8c541a82ddacf91f4f68ab6166c16ffdc9c5/classes/Webrat/Configuration.html
+  # http://gitrdoc.com/rdoc/brynary/webrat/273e8c541a82ddacf91f4f68ab6166c16ffdc9c5/classes/Webrat/Configuration.html
 end
 
 class ActiveSupport::TestCase
